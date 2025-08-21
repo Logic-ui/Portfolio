@@ -1,0 +1,162 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}About Me - Software Engineer{% endblock %}
+{% block decription %}Learn more about my journey, skills, and experience as a software engineer.{% endblock %}
+{% block keywords %}Software Engineer, Full Stack Developer, Resume, Skills, Timeline{% endblock %}
+
+{% block extend_header %}{% endblock %}
+{% block extend_footer %}{% endblock %}
+
+{% block content %}
+<!-- Banner -->
+<section>
+  <div class="innerPageBannerCol">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-md-6">
+          <div class="bannerContent">
+            <h1 class="xlTitle pb-md-3">About Me</h1>
+            <p class="lead">Software Engineer | Full-Stack Developer | Problem Solver</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Intro Section -->
+<section class="py-5 lightBg">
+  <div class="container">
+    <div class="row g-4 align-items-center">
+      <div class="col-md-6">
+        <img src="{% static 'images/usman.jpg' %}" alt="Profile Image" class="img-fluid rounded">
+      </div>
+      <div class="col-md-6">
+        <h3>Hello, I'm Usman Ali</h3>
+        <p>I’m a passionate Software Engineer with hands-on experience in building scalable web applications using modern frameworks like <strong>Django, Flask, Laravel</strong>, and front-end technologies like <strong>HTML, CSS, JavaScript, Bootstrap, Vue.js</strong>.</p>
+        <p>I focus on performance, clean code, and intuitive UX. Whether it's a real-time dashboard, REST API, or custom admin panel, I ensure efficient development and deployment.</p>
+        <a href="{% static '/Usman Ali CV.pdf' %}" class="btn btn-primary mt-3" download>Download CV</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Timeline of Experience -->
+<section>
+  <div class="sectionSpaceSm lightBg">
+    <div class="container">
+      <div class="row pb-3">
+        <div class="col">
+          <h4 class="smText regular">Work Experience</h4>
+        </div>
+      </div>
+
+            <!-- Work Experience Slide: LOGICCHASERS -->
+                <h4 class="mdTitle cs1Title">
+                  <a href="https://logicchasers.com/">LOGICCHASERS Pvt Ltd, Pakistan</a>
+                </h4>
+                <ul class="cardOptionCol">
+                  <li>Aug 2024 - Aug 2025</li>
+                  <li>Software Engineer</li>
+                </ul>
+                <p>
+                  A startup where I contributed across various technologies. I led backend development in <strong>Python Flask</strong>, building new features and resolving issues.<br><br>
+                  I also worked with <strong>FastAPI</strong> to implement secure <strong>API key generation</strong> and integrate <strong>JWT authentication</strong> for endpoint protection.<br><br>
+                  Additionally, I engaged in <strong>data analysis and visualization</strong> using <strong>NumPy, Pandas, Matplotlib, Seaborn,</strong> and <strong>Plotly</strong>. I contributed to <strong>Power BI dashboards</strong>, machine learning experiments, and automated data extraction pipelines.
+                </p>
+                <h4><b>Full-Stack Web Application & Data Visualization</b></h4>
+                
+                <p><b>Front-End Development:</b> Designed responsive web interfaces with consistent typography and branding using clean <b>UI/UX principles</b> and custom fonts. Built dynamic dashboards and filterable forms using <b>HTML, CSS, Jinja2</b>, and <b>Flask</b> templates.</p>
+
+                <p><b>Interactive Mapping:</b> Developed real-time, interactive maps using <b>GeoJSON</b> with multiple base layers, custom marker logic, tooltips, and export functionality to enhance geospatial insights.</p>
+
+                <p><b>Data Visualization:</b> Built intuitive <b>stacked bar charts</b> for comparative analysis of <b>consumption</b> and <b>waste data</b> using dynamic color assignment, real-time filtering, and session-based updates.</p>
+
+                <p><b>PPT Report Automation:</b> Automated <b>PowerPoint</b> generation with <b>python-pptx</b>, embedding charts, metadata, and uploaded images into exportable reports.</p>
+
+                <p><b>Form & Metadata Management:</b> Built secure <b>file upload</b> and <b>asset management</b> systems with validation, structured saving, and cleanup mechanisms.</p>
+
+                <p><b>Database & Models:</b> Structured <b>SQLAlchemy</b> models for project metadata and implemented modular color assignment logic for materials. Processed and normalized data with <b>Pandas</b> for clean, aggregated reporting.</p>
+
+                <h4><b>FastAPI Authentication & Secure API Development</b></h4>
+
+                <p>Developed a secure <b>React login form</b> that authenticates users using a <b>FastAPI backend with JWT</b>. Handled token storage, client-side access control, and protected route redirection. Styled clean UI using <b>Tailwind CSS</b> and implemented proper error handling for user feedback.</p>
+
+                <h4><b>PHP-based CRUD Application</b></h4>
+
+                <p>Built a <b>CRUD system</b> with an <b>HTML & CSS frontend</b> that stores user information (<b>name, city, phone, salary</b>) in a <b>MySQL database</b>. Features include <b>Create, Read, Update, Delete</b> operations and a dynamic <b>income tax calculator</b> based on fiscal year tax slabs, displaying monthly tax for each user.</p>
+
+                <h4><b>RESTful API Development</b></h4>
+
+                <p>Designed and implemented <b>RESTful APIs (GET & POST)</b> using <b>Django, FastAPI, and Flask</b> to handle data exchange between frontend and backend systems.</p>
+
+                <h4><b>Machine Learning & NLP Project</b></h4>
+
+                <p><b>Sentiment Analysis for Disease Outbreak Prediction:</b> Implemented a <b>machine learning</b> and <b>NLP model</b> to analyze sentiment data for predicting potential <b>disease outbreaks</b>.</p>
+              </div>
+            </div>
+
+        <!-- Swiper Navigation -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section class="py-5 lightBg">
+  <div class="container">
+    <h3 class="mb-4">Technical Skills</h3>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <label>Python / Django</label>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 90%;">90%</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label>JavaScript</label>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 75%;">75%</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label>HTML / CSS</label>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 95%;">95%</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label>SQL / SQLite / MySQL</label>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 85%;">85%</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label>Flask / FastAPI</label>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 70%;">70%</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label>Data anaylsis and Data visualization</label>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 90%;">90%</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label>Git / GitHub</label>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 90%;">90%</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+          <label>Docker</label>
+          <div class="progress">
+            <div class="progress-bar" style="width: 70%;">70%</div>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

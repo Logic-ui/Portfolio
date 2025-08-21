@@ -1,0 +1,264 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+<!-- ================================
+Start SEO blocks
+================================= -->
+{% block title %}{% endblock %}
+{% block decription %}{% endblock %}
+{% block keywords %}{% endblock %}
+<!-- ================================
+END SEO blocks
+================================= -->
+
+<!-- ================================
+Start CSS blocks
+================================= -->
+{% block extend_header %}{% endblock %}
+<!-- ================================
+END CSS blocks
+================================= -->
+
+<!-- ================================
+Start script blocks
+================================= -->
+{% block extend_footer %}{% endblock %}
+<!-- ================================
+END script blocks
+================================= -->
+
+<!-- ================================
+Start Content
+================================= -->
+{% block content %}
+<section>
+  <div class="innerPageBannerCol py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+
+          <!-- Image Carousel -->
+          <div id="projectCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+            <div class="carousel-inner text-center">
+
+              <div class="carousel-item active">
+                <img src="{% static 'images/year1.jpg' %}" class="d-block w-100 rounded shadow" alt="Employee Dashboard">
+              </div>
+
+              <div class="carousel-item">
+                <img src="{% static 'images/year2.jpg' %}" class="d-block w-100 rounded shadow" alt="Fiscal Year Form">
+              </div>
+
+              <div class="carousel-item">
+                <img src="{% static 'images/year3.jpg' %}" class="d-block w-100 rounded shadow" alt="Tax Slab Table">
+              </div>
+
+              <div class="carousel-item">
+                <img src="{% static 'images/year4.jpg' %}" class="d-block w-100 rounded shadow" alt="Tax Calculation">
+              </div>
+
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+
+          <!-- Static Text Below Carousel -->
+          <div class="text-center">
+            <h1 class="xlTitle pb-3">Employee Information Management System</h1>
+            <p class="mb-2">
+              This full-stack web application was developed using PHP and MySQL to efficiently manage employee data, fiscal years, and tax slabs based on Pakistan’s 2025–2026 budget framework. The project focuses on real-world data handling, tax computation logic, and modular CRUD functionalities.
+            </p>
+
+            <h5 class="mt-4">Project Features</h5>
+            <ul class="mb-2 text-start d-inline-block">
+              <li><strong>Employee Information Module:</strong> Add, edit, delete employee records including personal and salary details. Data is displayed in a responsive table with inline editing support.</li>
+              <li><strong>Fiscal Year Module:</strong> Manage fiscal years through dynamic forms. Integrated dropdowns allow users to select fiscal years linked with tax slab data.</li>
+              <li><strong>Tax Slab Management:</strong> Create and manage tax slabs with salary ranges, tax percentages, and base tax values for each fiscal year.</li>
+              <li><strong>Dynamic Tax Calculation:</strong> Automatically calculate annual and monthly tax based on salary and fiscal year with additional rules for high-income brackets.</li>
+            </ul>
+
+            <h5 class="mt-4">Technology Stack</h5>
+            <p class="mb-0">
+              PHP (Core, using mysqli prepared statements), MySQL for backend and database, HTML and CSS for frontend structure and styling.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="innerPageBannerCol py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+
+          <!-- Image Carousel -->
+          <div id="mapProjectCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+            <div class="carousel-inner text-center">
+
+              <div class="carousel-item active">
+                <img src="{% static 'images/flask1.jpg' %}" class="d-block w-100 rounded shadow" alt="Map with Markers">
+              </div>
+
+              <div class="carousel-item">
+                <img src="{% static 'images/flask2.jpg' %}" class="d-block w-100 rounded shadow" alt="Leaflet Layer Controls">
+              </div>
+
+              <div class="carousel-item">
+                <img src="{% static 'images/flask4.jpg' %}" class="d-block w-100 rounded shadow" alt="GeoJSON Visualization">
+              </div>
+
+              <div class="carousel-item">
+                <img src="{% static 'images/flask5.jpg' %}" class="d-block w-100 rounded shadow" alt="Plotly Chart Integration">
+              </div>
+
+            </div>
+
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#mapProjectCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mapProjectCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+
+          <!-- Static Text Below Carousel -->
+          <div class="text-center">
+            <h1 class="xlTitle pb-3">Geospatial Data Visualization Web Application</h1>
+            <p class="mb-2">
+              This full-stack web application was built using Python (Flask) and SQLite, integrating advanced geospatial data visualization features for interactive data analysis and mapping. The system supports dynamic CRUD operations, spatial data rendering, and embedded analytics through visual charts and maps.
+            </p>
+
+            <h5 class="mt-4">Key Features</h5>
+            <ul class="mb-3 text-start d-inline-block">
+              <li><strong>Complete CRUD:</strong> Create, edit, view, and delete geospatial records using Flask routes and SQLite.</li>
+              <li><strong>Interactive Maps:</strong> Leaflet.js integration with multiple base layers including OpenStreetMap, Satellite, Topographic, and Dark modes.</li>
+              <li><strong>GeoJSON Visualization:</strong> Display points, lines, and polygons with customized popups and thematic styling.</li>
+              <li><strong>Real-Time Markers:</strong> Fetch markers from Flask endpoints dynamically and render them using custom icons.</li>
+              <li><strong>Live Mouse Coordinates:</strong> Show coordinates in real time on the map interface.</li>
+              <li><strong>Basemap Toggling:</strong> Enable users to switch between basemap styles with built-in Leaflet layer controls.</li>
+              <li><strong>Analytics Dashboards:</strong> Plotly charts including bar and stacked bar charts rendered in Jinja2 templates for interactive data visualization.</li>
+            </ul>
+
+            <h5 class="mt-4">Technology Stack</h5>
+            <p class="mb-2">
+              Python (Flask), SQLite for lightweight database management, Leaflet.js for geospatial interactivity, Plotly for data visualization, and HTML/CSS/Bootstrap for responsive UI.
+            </p>
+
+            <h5 class="mt-4">Example Use Cases</h5>
+            <ul class="mb-2 text-start d-inline-block">
+              <li>Visualizing cities such as Islamabad, Lahore, Karachi, Murree, and New York using interactive markers</li>
+              <li>Displaying live GeoJSON datasets for spatial data analysis</li>
+              <li>Providing in-app map tools and dashboard-level analytics for location-based decision-making</li>
+            </ul>
+
+            <p class="mb-0">
+              This project demonstrates expertise in geospatial integration, RESTful architecture, client-side rendering, and full-stack development using Python and modern web technologies.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="innerPageBannerCol py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+
+          <!-- Image Carousel -->
+          <div id="secureSQLCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+            <div class="carousel-inner text-center">
+
+              <div class="carousel-item active">
+                <img src="{% static 'images/fastapi.jpg' %}" class="d-block w-100 rounded shadow" alt="Login Screen">
+              </div>
+
+            </div>
+
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#secureSQLCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#secureSQLCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+
+          <!-- Static Text Below Carousel -->
+          <div class="text-center">
+            <h1 class="xlTitle pb-3">Secure SQL Query Interface with FastAPI & React</h1>
+            <p class="mb-2">
+              This full-stack web application allows authenticated users to submit natural language prompts, which are processed into SQL queries. It features secure authentication, modern UI, and strong separation between backend and frontend using FastAPI and React.
+            </p>
+
+            <h5 class="mt-4">Key Features</h5>
+            <ul class="mb-3 text-start d-inline-block">
+              <li><strong>Authentication System:</strong> Implemented secure JWT-based login with FastAPI and protected all sensitive endpoints.</li>
+              <li><strong>Token Access Control:</strong> Utilized <code>Depends</code>, <code>Form</code>, and <code>OAuth2PasswordBearer</code> for token validation and secure form handling.</li>
+              <li><strong>React Frontend:</strong> Developed a responsive UI using React, TypeScript, and Tailwind CSS. Includes a modern login page and query interface.</li>
+              <li><strong>Session Management:</strong> Handled sessions using <code>localStorage</code> and React Router for navigation.</li>
+              <li><strong>Cross-Origin Support:</strong> Enabled CORS middleware to support seamless development and deployment between client and server.</li>
+              <li><strong>Error Handling:</strong> Implemented alerts for token expiry, invalid credentials, and server response errors.</li>
+              <li><strong>SQL-Ready Backend:</strong> Configured local MySQL integration with clean API structure and routing.</li>
+            </ul>
+
+            <h5 class="mt-4">Technology Stack</h5>
+            <p class="mb-2">
+              FastAPI (Python), JWT for authentication, React (with TypeScript), Tailwind CSS for styling, MySQL for backend data, React Router DOM for navigation.
+            </p>
+
+            <h5 class="mt-4">Learning Outcomes</h5>
+            <ul class="mb-2 text-start d-inline-block">
+              <li>Strengthened backend security and token management practices with FastAPI</li>
+              <li>Improved frontend component handling and state management using React and TypeScript</li>
+              <li>Gained hands-on experience integrating secure full-stack login systems</li>
+            </ul>
+
+            <p class="mb-0">
+              This project showcases expertise in modern API security, UI/UX design, and full-stack integration of Python and JavaScript frameworks.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="lightBg">
+    <div class="container">
+      <div class="portfolioContentMain">
+        <div class="row g-3 g-md-4 g-lg-5 portfolioRow">
+          {% for obj in object_list %}
+          <div class="col-md-6 pColMain">
+            <div class="pCol">
+              <a href="{% url 'main:portfolio' slug=obj.slug %}" >
+              <img src="{{obj.image.url}}" alt="..." class="pImg">
+              </a>
+            </div>
+          </div>
+          {% endfor %}
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ================================
+End Content
+================================= -->
+{% endblock%}    
